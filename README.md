@@ -1,6 +1,6 @@
 # Magento2x OrderNotes
 
-This module is used as a OrderNotes for all BDCrops Magento 2 extensions.
+This module is used as a OrderNotes for Magento 2 extensions.
 we have built a small, but functional, order notes module. This allowed us to
 familiarize ourselves with an important aspect of customizing the checkout experience. The gist
 of this lies in understanding the checkout_index_index layout handle, the JavaScript
@@ -8,8 +8,10 @@ window.checkoutConfig object, and the uiComponent.
 
 
 ## Goal
+
 - Customizing & Passing data Checkout Experiences
 - Adding order notes to the checkout
+- Learn Magento 2 Certified Professional Developer exam topics "Customizing the Checkout Process 13%"
 
 ## 1. Install & upgrade  OrderNotes
 
@@ -55,7 +57,26 @@ Run compile if your store in Product mode:
 php bin/magento setup:di:compile
 ```
 
-## 2. Tutorial
+## 2. Magento 2 Module "OrderNotes" Step By Step Tutorial
+
+- Create app/code/BDC/ContactPreferences/registration.php
+- Create app/code/BDC/ContactPreferences/etc/module.xml
+- Create app/code/BDC/ContactPreferences/etc/frontend/routes.xml
+- Create app/code/BDC/ContactPreferences/Controller/Index.php
+- Create app/code/BDC/ContactPreferences/Controller/Index/Process.php
+- Create app/code/BDC/ContactPreferences/Model/ConfigProvider.php
+- Create app/code/BDC/ContactPreferences/Setup/InstallSchema.php
+- Create app/code/BDC/ContactPreferences/etc/frontend/di.xml
+- Create app/code/BDC/ContactPreferences/etc/webapi_rest/events.xml
+- Create app/code/BDC/ContactPreferences/Observer/SaveOrderNotesToOrder.php
+- Create app/code/BDC/ContactPreferences/view/frontend/layout/checkout_index_index.xml
+- Create app/code/BDC/ContactPreferences/view/frontend/web/js/view/order-notes.js
+- Create app/code/BDC/ContactPreferences/view/frontend/web/template/order/notes.html
+
+
+![](docs/OrderNotesCheckout.png)
+![](docs/OrderNotesOrderDetails.png)
+![](docs/OrderNotesOrderComent.png)
 
 
 ## 3. FAQ
