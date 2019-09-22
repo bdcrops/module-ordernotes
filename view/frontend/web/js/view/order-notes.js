@@ -1,13 +1,10 @@
-define(
-    [
-        'ko',
+define( ['ko',
         'uiComponent',
         'underscore',
         'Magento_Checkout/js/model/step-navigator',
         'jquery',
         'mage/translate',
-        'mage/url'
-    ],
+        'mage/url'],
     function (
         ko,
         Component,
@@ -15,17 +12,11 @@ define(
         stepNavigator,
         $,
         $t,
-        url
-    ) {
+        url ) {
         'use strict';
-
         let checkoutConfigOrderNotes = window.checkoutConfig.orderNotes;
-
         return Component.extend({
-            defaults: {
-                template: 'BDC_OrderNotes/order/notes'
-            },
-
+            defaults: { template: 'BDC_OrderNotes/order/notes' },
             isVisible: ko.observable(true),
             initialize: function () {
                 this._super();
@@ -33,26 +24,12 @@ define(
                 return this;
             },
 
-            getTitle: function () {
-                return checkoutConfigOrderNotes.title;
-            },
-
-            getHeader: function () {
-                return checkoutConfigOrderNotes.header;
-            },
-
-            getFooter: function () {
-                return checkoutConfigOrderNotes.footer;
-            },
-
-            getNotesOptions: function () {
-                return checkoutConfigOrderNotes.options;
-            },
-
-            getCheckoutConfigOrderNotesTime: function () {
-                return checkoutConfigOrderNotes.time;
-            },
-
+            getTitle: function () { return checkoutConfigOrderNotes.title; },
+            getHeader: function () { return checkoutConfigOrderNotes.header; },
+            getFooter: function () { return checkoutConfigOrderNotes.footer; },
+            getNotesOptions: function () { return checkoutConfigOrderNotes.options; },
+            getCheckoutConfigOrderNotesTime: function ()
+              { return checkoutConfigOrderNotes.time;},
             setOrderNotes: function (valObj, event) {
                 if (valObj.code == 'other') {
                     $('[name="order_notes"]').val('');
