@@ -59,19 +59,19 @@ php bin/magento setup:di:compile
 
 ## 2. Magento 2 Module "OrderNotes" Step By Step Tutorial
 
-- Create app/code/BDC/ContactPreferences/registration.php
-- Create app/code/BDC/ContactPreferences/etc/module.xml
-- Create app/code/BDC/ContactPreferences/etc/frontend/routes.xml
-- Create app/code/BDC/ContactPreferences/Controller/Index.php
-- Create app/code/BDC/ContactPreferences/Controller/Index/Process.php
-- Create app/code/BDC/ContactPreferences/Model/ConfigProvider.php
-- Create app/code/BDC/ContactPreferences/Setup/InstallSchema.php
-- Create app/code/BDC/ContactPreferences/etc/frontend/di.xml
-- Create app/code/BDC/ContactPreferences/etc/webapi_rest/events.xml
-- Create app/code/BDC/ContactPreferences/Observer/SaveOrderNotesToOrder.php
-- Create app/code/BDC/ContactPreferences/view/frontend/layout/checkout_index_index.xml
-- Create app/code/BDC/ContactPreferences/view/frontend/web/js/view/order-notes.js
-- Create app/code/BDC/ContactPreferences/view/frontend/web/template/order/notes.html
+- Create app/code/BDC/OrderNotes/registration.php
+- Create app/code/BDC/OrderNotes/etc/module.xml
+- Create app/code/BDC/OrderNotes/etc/frontend/routes.xml
+- Create app/code/BDC/OrderNotes/Controller/Index.php
+- Create app/code/BDC/OrderNotes/Controller/Index/Process.php
+- Create app/code/BDC/OrderNotes/Model/ConfigProvider.php
+- Create app/code/BDC/OrderNotes/Setup/InstallSchema.php
+- Create app/code/BDC/OrderNotes/etc/frontend/di.xml
+- Create app/code/BDC/OrderNotes/etc/webapi_rest/events.xml
+- Create app/code/BDC/OrderNotes/Observer/SaveOrderNotesToOrder.php
+- Create app/code/BDC/OrderNotes/view/frontend/layout/checkout_index_index.xml
+- Create app/code/BDC/OrderNotes/view/frontend/web/js/view/order-notes.js
+- Create app/code/BDC/OrderNotes/view/frontend/web/template/order/notes.html
 
 
 ![](docs/OrderNotesCheckout.png)
