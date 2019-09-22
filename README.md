@@ -60,22 +60,73 @@ php bin/magento setup:di:compile
 ## 2. Magento 2 Module "OrderNotes" Step By Step Tutorial
 
 - Create app/code/BDC/OrderNotes/registration.php
+```
+<?php
+\Magento\Framework\Component\ComponentRegistrar::register(
+    \Magento\Framework\Component\ComponentRegistrar::MODULE,
+    'BDC_OrderNotes',
+    __DIR__
+);
+```
 - Create app/code/BDC/OrderNotes/etc/module.xml
+```
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="BDC_OrderNotes" setup_version="1.0.0"/>
+</config>
+```
 - Create app/code/BDC/OrderNotes/etc/frontend/routes.xml
-- Create app/code/BDC/OrderNotes/Controller/Index.php
-- Create app/code/BDC/OrderNotes/Controller/Index/Process.php
-- Create app/code/BDC/OrderNotes/Model/ConfigProvider.php
-- Create app/code/BDC/OrderNotes/Setup/InstallSchema.php
-- Create app/code/BDC/OrderNotes/etc/frontend/di.xml
-- Create app/code/BDC/OrderNotes/etc/webapi_rest/events.xml
-- Create app/code/BDC/OrderNotes/Observer/SaveOrderNotesToOrder.php
-- Create app/code/BDC/OrderNotes/view/frontend/layout/checkout_index_index.xml
-- Create app/code/BDC/OrderNotes/view/frontend/web/js/view/order-notes.js
-- Create app/code/BDC/OrderNotes/view/frontend/web/template/order/notes.html
+```
 
+```
+- Create app/code/BDC/OrderNotes/Controller/Index.php
+```
+
+```
+- Create app/code/BDC/OrderNotes/Controller/Index/Process.php
+```
+
+```
+- Create app/code/BDC/OrderNotes/Setup/InstallSchema.php
+```
+
+```
+- Create app/code/BDC/OrderNotes/etc/frontend/di.xml
+```
+
+```
+- Create app/code/BDC/OrderNotes/Model/ConfigProvider.php
+```
+
+```
+- Create app/code/BDC/OrderNotes/etc/webapi_rest/events.xml
+```
+
+```
+- Create app/code/BDC/OrderNotes/Observer/SaveOrderNotesToOrder.php
+```
+
+```
+- Create app/code/BDC/OrderNotes/view/frontend/layout/checkout_index_index.xml
+```
+
+```
+- Create app/code/BDC/OrderNotes/view/frontend/web/js/view/order-notes.js
+```
+
+```
+- Create app/code/BDC/OrderNotes/view/frontend/web/template/order/notes.html
+```
+
+```
+- OrderNotes Checkout
 
 ![](docs/OrderNotesCheckout.png)
+
+-  Order Notes Order Details
 ![](docs/OrderNotesOrderDetails.png)
+
+- Order Notes Order Comment
 ![](docs/OrderNotesOrderComent.png)
 
 
